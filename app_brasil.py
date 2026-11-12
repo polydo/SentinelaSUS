@@ -20,14 +20,15 @@ import streamlit as st
 from sqlalchemy import bindparam, create_engine, text
 from sqlalchemy.engine import URL
 
+
 # ----------------------------------------------------------------------------
 # CONFIGURAÇÃO
 # ----------------------------------------------------------------------------
-PG_HOST = "localhost"
+PG_HOST = "aws-1-us-east-1.pooler.supabase.com"
 PG_PORT = 5432
-PG_DB = "dbSentinelaSUS"
-PG_USER_PADRAO = os.getenv("PGUSER", "postgres")
-PG_SENHA_PADRAO = os.getenv("PGPASSWORD", "postgres")
+PG_DB = "postgres"
+PG_USER_PADRAO = "postgres.fdgrtuwhyccshnugcefy"
+PG_SENHA_PADRAO = "Amp07062020@@**"
 PG_SCHEMA_PADRAO = "public"
 
 T_FATO, T_PMVG, T_CAL, T_ICMS = "fato_bps", "dim_pmvg", "dim_calendario", "dim_icms"
