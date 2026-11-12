@@ -808,7 +808,7 @@ else:
         fig_m.update_layout(
             height=380, margin=dict(l=10, r=10, t=10, b=10), hovermode="x unified",
             paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="#e8eaf0", size=13),
-            legend=dict(orientation="h", y=1.12, x=0),
+            legend=dict(orientation="h", y=1.12, x=0, font=dict(color="#e8eaf0")),
             xaxis=dict(tickformat="%m/%Y", hoverformat="%m/%Y", gridcolor="#2a3142", showline=False),
             yaxis=dict(
                 title=dict(text="Compras com sobrepreço", font=dict(color="#f9a85a")),
